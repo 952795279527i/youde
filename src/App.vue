@@ -1,18 +1,17 @@
 <template>
   <div id="app">
     <HelloWorld/>
-    <Count/>
+    <router-link to="/">你好</router-link> |
+    <router-link to="/count">再见</router-link>
+    <hr>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import Count from "./components/Count.vue";
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    Count
   }
 }
 </script>

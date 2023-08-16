@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import dataList from "./store";
+import cardata from "./cardata";
 Vue.use(Vuex);
 const actions = {
   jia(context, value) {
@@ -45,5 +46,6 @@ export default new Vuex.Store({
   getters,
   modules: {
     dataList,
+    cardata,
   },
 });
